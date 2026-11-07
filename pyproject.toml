@@ -1,0 +1,22 @@
+[project]
+name = "my-first-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Hamed Ghaseminezhad", email = "101051231+Hamed-Ghaseminezhad@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain-groq>=1.1.3",
+    "langchain-openai>=1.7.4",
+    "mcp-use>=1.7.1",
+    "openai>=3.46.0",
+]
+
+[project.scripts]
+my-first-mcp = "my_first_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
